@@ -20,6 +20,9 @@ export default function MyStack() {
           options={{
             headerBackTitleVisible: false,
             title: '',
+            headerStyle: {
+              backgroundColor: '#CCCCCC'
+            }
           }}
           component={RegisterTask} />
       </Stack.Navigator>

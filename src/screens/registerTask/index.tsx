@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Button, Text, TextInput, View} from 'react-native';
+import {Button, Pressable, Text, TextInput, View} from 'react-native';
 import { styles } from '../../styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -37,13 +37,15 @@ export default function RegisterTask({ navigation }) {
     <View style={styles.container}>
         
         <Text style={styles.title}>Cadastre uma nova tarefa</Text>
-        <Text>Descrição: </Text>
+        <Text style={styles.descricaoText}>Descrição: </Text>
         <TextInput
         style={styles.input}
         onChangeText={(value) => setdescription(value)}
         placeholder="Exemplo: Almoço"
         />
-        <Button title='Cadastrar' onPress={() => cadastrar()} /> 
+        <Pressable style={styles.registerButton} onPress={cadastrar}>
+        <Text style={styles.registerText}>Cadastrar</Text>
+        </Pressable>
     </View>
   );
 }

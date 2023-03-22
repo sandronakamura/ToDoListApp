@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: '#CCCCCC',
-    padding: 15,
+    paddingVertical: 15,
+    paddingHorizontal: 10
   },
   itens: {
     flexDirection: 'row',
@@ -40,6 +41,15 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 18,
   },
+  limparText: {
+    color: '#000',
+    fontSize: 18,
+  },
+  descricaoText: {
+    color: '#000',
+    fontSize: 18,
+    paddingVertical: 15
+  },
   input: {
     width: '80%',
     height: 40,
@@ -49,6 +59,23 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginBottom: 16,
   },
+  registerButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 4,
+    elevation: 3,
+    backgroundColor: '#99c9ff',
+  },
+  registerText: {
+    fontSize: 16,
+    lineHeight: 21,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: 'white',
+  },
+
 });
 
 export {styles};

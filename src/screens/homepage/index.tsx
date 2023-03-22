@@ -78,7 +78,7 @@ export default function Homepage({ navigation }: any) {
         <View style={styles.homeContainer}>
         <TouchableOpacity
         onPress={() => clearAll()} >
-        <Text>Limpar</Text>
+        <Text style={styles.limparText}>Limpar</Text>
         </TouchableOpacity>
         <Text style={styles.title}>To Do List</Text> 
         <TouchableOpacity
